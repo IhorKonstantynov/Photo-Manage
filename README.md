@@ -5,10 +5,6 @@
 ProPhotosAI is ai photo generator using OpenAPI. Programming Stack is Laravel 10 and Vue3 inertia.
 
 ## Project Running.
-
-```bash
-git clone https://github.com/Jcsarokin/prophotos.git
-```
 Go to the project folder.
 ```javascript
 composer install // install vendor
