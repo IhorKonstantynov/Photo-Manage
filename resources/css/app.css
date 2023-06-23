@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'BelleBold';
+  src: url("/fonts/Belle Sans Extra Condensed Extra Bold.ttf");
+}
+
+.n-radio-button.n-radio-button--checked {
+  background-color: #fe4801 !important;
+  color: #fff !important;
+  border-color: #fe4801 !important;
+  border-top-color: #fe4801 !important;
+  border-left-color: #fe4801 !important;
+  border-bottom-color: #fe4801 !important;
+  border-right-color: #fe4801 !important;
+}
+
+.n-radio-button.n-radio-button--checked:focus {
+  border-top-color: #fe4801 !important;
+  border-left-color: #fe4801 !important;
+  border-bottom-color: #fe4801 !important;
+  border-right-color: #fe4801 !important;
+}
+
+.n-upload-file-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.n-upload-file.n-upload-file--image-type {
+  width: 20%;
+}
+
+.n-upload-file-info {
+  flex-direction: column;
+}
+
+.n-upload-file-list .n-upload-file.n-upload-file--image-type .n-upload-file-info .n-upload-file-info__thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.n-upload-file-info__action.n-upload-file-info__action--image-type {
+  opacity: 1 !important;
+}
+
+.n-upload-file-info__action.n-upload-file-info__action--image-type .n-button.n-button--default-type.n-button--medium-type {
+  color: red !important;
+}
+
+.n-upload-file-info__name {
+  width: 100%;
+}
+
+.n-image > img {
+  width: 100%;
+}
+
+.n-image-preview-toolbar {
+  background: #fe4801dd;
+}
+
+.n-image-preview-toolbar > .n-base-icon {
+  margin-right: 10px;
+  color: white;
+}
+
+.n-image-preview-toolbar > .n-base-icon:nth-child(3), .n-image-preview-toolbar > .n-base-icon:nth-child(4), .n-image-preview-toolbar > .n-base-icon:nth-child(5), .n-image-preview-toolbar > .n-base-icon:nth-child(6), .n-image-preview-toolbar > .n-base-icon:nth-child(7) {
+  display: none;
+}
+
+.swal-icon {
+  /* margin: 0; */
+}
+
+.swal-icon img{
+  /* width: 50px;
+  height: 50px;
+  margin: auto; */
+}
+
+.loader {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50px;
+  height: 80px;
+  border-top: 5px solid #000a;
+  border-bottom: 5px solid #000a;
+  position: relative;
+  background: linear-gradient(#FF3D00 30px, transparent 0) no-repeat;
+  background-size: 2px 40px;
+  background-position: 50% 0px;
+  animation: spinx 15s linear infinite;
+}
+.loader:before, .loader:after {
+  content: "";
+  width: 40px;
+  left: 50%;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  transform: translatex(-50%);
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 20px 20px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  animation: lqt 15s linear infinite;
+}
+.loader:after {
+  top: auto;
+  bottom: 0;
+  border-radius: 20px 20px 0 0;
+  animation: lqb 15s linear infinite;
+}
+@keyframes lqt {
+  0%, 100% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0% 0px;
+  }
+  50% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0% 40px;
+  }
+  50.1% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0% -40px;
+  }
+}
+@keyframes lqb {
+  0% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0 40px;
+  }
+  100% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0 -40px;
+  }
+}
+@keyframes spinx {
+  0%, 49% {
+    transform: rotate(0deg);
+    background-position: 50% 36px;
+  }
+  51%, 98% {
+    transform: rotate(180deg);
+    background-position: 50% 4px;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-position: 50% 36px;
+  }
+}
+
+.img-list:hover > img:first-child {
+  rotate: 12deg;
+}
+.img-list:hover > img:nth-child(2) {
+  rotate: -12deg;
+}
+.img-list:hover > img:nth-child(3) {
+  rotate: 2deg;
+}
+    
+
+@media only screen and (max-width: 1024px) {
+  .n-upload-file.n-upload-file--image-type {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .n-upload-file.n-upload-file--image-type {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .n-upload-file.n-upload-file--image-type {
+    width: 50%;
+  }
+}

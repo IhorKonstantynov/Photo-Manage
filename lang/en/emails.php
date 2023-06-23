@@ -1,0 +1,28 @@
+<?php
+
+return [
+  'Hey' => "Hey :name",
+  'Hello' => "Hello",
+  'Dear' => 'Dear :name',
+  'WelcomeText' => "We're thrilled to welcome you to the ProPhotos family! With our cutting-edge AI technology, you can now create stuning, professional headshots in just a minutes. Say goodbye to scheduling appointments and expensive photography sessions!",
+  'SupportText' => "If you have any question or need assistance, please feel free to contact our support team. We're always here to help! ",
+  'HappyCreating' => "Happy creating and see you soon!",
+  'YourAccount' => "Your account",
+  "WarmRegards" => "Warm regards",
+  "CustomerSuccessManager" => "Customer Success Manager",
+  "RefundSorryText" => 'Sorry to hear your headshots weren’t up to our quality standards!',
+  'RefundTip' => "We've refunded your purchase. Your funds should be back in your account in a few days.",
+  'Best' => "Best",
+  'RequestedRefund' => ':name requested refund payment',
+  'ThanksPatience' => "Thank you for your patience, your headshots are ready!",
+  'YourAIHeadshots' => "Your AI Headshots",
+  "UsePromoCode" => "Use Promo Code",
+  "DiscountTimeTip" => "Your :percent% discount is valid for the next :time hours!",
+  'PromocodeText' => "We noticed that you recently signed up with us, but haven't had the chance to get your headshots yet! To show our appreciation for your interest and to make your decision a little easier, we would like to offer you an exclusive 20% discount on your first purchase!",
+  "UsePromoText" => "Use code :promo in your profile page to claim your discount.",
+  'YouMadeSale' => "You just made a referral sale!",
+  "ViewDashboard" => "View Dashboard",
+  "InviteText" => ":name from :company_name has paid & invited you to generate AI Headshots!",
+  "InviteRegisterTip" => "Please register for a ‘personal’ account at the registration page using this email to start the process.",
+  'RegisterNow' => "Register Now",
+];
